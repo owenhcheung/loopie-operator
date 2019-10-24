@@ -5,7 +5,7 @@
   height: 100vh;
   .left {
     grid-column: c1 / c2;
-    grid-row: r1 / r2;
+    //grid-row: r1 / r2;
     display: grid;
     grid-template-columns: [c1] 30px [c2] auto [c3] 30px [c4];
     grid-template-rows: [r1] 60px [r2] 60px [r3] auto [r4];
@@ -86,12 +86,15 @@
         .total {
           grid-column: c8 / c9;
         }
+        .order-expanded {
+          
+        }
       }
     }
   }
   .right {
     grid-column: c2 / c3;
-    grid-row: r1 / r2;
+    //grid-row: r1 / r2;
     display: grid;
     grid-template-columns: [c1] 30px [c2] auto [c3] 30px [c4];
     grid-template-rows: [r1] 60px [r2] auto [r3];

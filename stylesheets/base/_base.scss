@@ -16,9 +16,11 @@ html {
 }
 .left {
   background: $white;
+  height: 100%;
 }
 .right {
   background: $light-blue;
+  height: 100vh;
 }
 p {
   font-weight: bold;
