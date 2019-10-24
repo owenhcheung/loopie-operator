@@ -1,0 +1,107 @@
+.container {
+  display: grid;
+  grid-template-columns: [c1] auto [c2] 300px [c3];
+  grid-template-rows: [r1] 100% [r2];
+  height: 100vh;
+  .left {
+    grid-column: c1 / c2;
+    grid-row: r1 / r2;
+    display: grid;
+    grid-template-columns: [c1] 30px [c2] auto [c3] 30px [c4];
+    grid-template-rows: [r1] 60px [r2] 60px [r3] auto [r4];
+    .nav {
+      grid-column: c2 / c3;
+      grid-row: r1 / r2;      
+      display: grid;
+      grid-template-columns: [c1] 6% [c2] 8% [c3] 7% [c4] 8% [c5] auto [c6] 10% [c7];
+      .nav1 {
+        grid-column: c1 / c2;
+      }
+      .nav2 {
+        grid-column: c2 / c3;
+      }
+      .nav3 {
+        grid-column: c3 / c4;
+      }
+      .nav4 {
+        grid-column: c4 / c5;
+      }
+      .nav5 {
+        grid-column: c6 / c7;
+      }
+    }
+    .showing {
+      grid-column: c2 / c3;
+      grid-row: r2 / r3;
+    }
+    .orders {
+      grid-column: c2 / c3;
+      grid-row: r3 / r4;
+      .labels {
+        display: grid;
+        grid-template-columns: [c1] 2% [c2] 12% [c3] 15% [c4] 15% [c5] 14% [c6] 12% [c7] 14% [c8] 11% [c9] auto [c10] 2% [c11];
+        .label1 {
+          grid-column: c2 / c3;
+        }
+        .label2 {
+          grid-column: c3 / c4;
+        }
+        .label3 {
+          grid-column: c4 / c5;
+        }
+        .label4 {
+          grid-column: c5 / c6;
+        }
+        .label5 {
+          grid-column: c6 / c7;
+        }
+        .label6 {
+          grid-column: c7 / c8;
+        }
+        .label7 {
+          grid-column: c8 / c9;
+        }
+      }
+      .order {
+        display: grid;
+        grid-template-columns: [c1] 2% [c2] 12% [c3] 15% [c4] 15% [c5] 14% [c6] 12% [c7] 14% [c8] 11% [c9] auto [c10] 2% [c11];
+        .name {
+          grid-column: c2 / c3;
+        }
+        .pickup {
+          grid-column: c3 / c4;
+        }
+        .delivery {
+          grid-column: c4 / c5;
+        }
+        .washer {
+          grid-column: c5 / c6;
+        }
+        .driver {
+          grid-column: c6 / c7;
+        }
+        .status {
+          grid-column: c7 / c8;
+        }
+        .total {
+          grid-column: c8 / c9;
+        }
+      }
+    }
+  }
+  .right {
+    grid-column: c2 / c3;
+    grid-row: r1 / r2;
+    display: grid;
+    grid-template-columns: [c1] 30px [c2] auto [c3] 30px [c4];
+    grid-template-rows: [r1] 60px [r2] auto [r3];
+    .f-label {
+      grid-column: c2 / c3;
+      grid-row: r1 / r2;
+    }
+    .inputs {
+      grid-column: c2 / c3;
+      grid-row: r2 / r3;
+    }
+  }
+}

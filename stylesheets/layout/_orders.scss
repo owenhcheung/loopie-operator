@@ -1,0 +1,36 @@
+.labels {
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    background: $light-grey;
+}
+.order {
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid $light-grey;
+    .name {
+        p {
+            color: $blue;
+        }
+    }
+    .washer {
+        p {
+            color: $black;
+        }
+    }
+    .driver {
+        p {
+            color: $black;
+        }
+    }
+    .status {
+        .statustag {
+            padding: 10px 20px 10px 20px;
+            background: $light-blue;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            color: $blue;
+        }
+    }
+}
