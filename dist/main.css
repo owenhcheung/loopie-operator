@@ -469,7 +469,7 @@ html {
 
 .right {
   background: #F5F6F8;
-  height: 100vh;
+  height: 100%;
 }
 
 p {
@@ -490,6 +490,10 @@ p {
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  font-size: 1.5em;
 }
 
 .container {
@@ -583,6 +587,42 @@ a {
 .container .left .orders .order .total {
   grid-column: c8/c9;
 }
+.container .left .orders .order .order-expanded {
+  display: grid;
+  grid-template-columns: [c1] 60% [c2] 40% [c3];
+  grid-template-rows: [r1] 20px [r2] auto [r3] 20px [r4];
+}
+.container .left .orders .order .order-expanded .expand-left {
+  grid-column: c1/c2;
+  grid-row: r2/r3;
+  display: grid;
+  grid-template-columns: [c1] 3% [c2] 94% [c3] 3% [c4];
+  grid-template-rows: [r1] 40px [r2] auto [r3];
+}
+.container .left .orders .order .order-expanded .expand-left .top {
+  grid-column: c2/c3;
+  display: grid;
+  grid-template-columns: [c1] 18% [c2] 15% [c3] auto [c4] 10% [c5] 15% [c6];
+}
+.container .left .orders .order .order-expanded .expand-left .top .full-name {
+  grid-column: c1/c2;
+}
+.container .left .orders .order .order-expanded .expand-left .top .number {
+  grid-column: c2/c3;
+}
+.container .left .orders .order .order-expanded .expand-left .top .address {
+  grid-column: c3/c4;
+}
+.container .left .orders .order .order-expanded .expand-left .top .view-log {
+  grid-column: c4/c5;
+}
+.container .left .orders .order .order-expanded .expand-left .top .charge {
+  grid-column: c5/c6;
+}
+.container .left .orders .order .order-expanded .expand-right {
+  grid-column: c2/c3;
+  display: grid;
+}
 .container .right {
   grid-column: c2/c3;
   display: grid;
@@ -638,7 +678,7 @@ a {
   height: 50px;
   padding: 0 20px 0 20px;
   border: 1px solid #E0E0E4;
-  border-radius: 5px;
+  border-radius: 3px;
   margin-bottom: 14px;
 }
 
@@ -650,7 +690,7 @@ a {
 .labels {
   width: 100%;
   height: 60px;
-  border-radius: 5px;
+  border-radius: 3px;
   background: #E0E0E4;
 }
 
@@ -673,21 +713,54 @@ a {
   padding: 10px 20px 10px 20px;
   background: #F5F6F8;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   font-weight: bold;
   color: #187EF6;
+  font-family: "Roboto";
 }
 .order .order-expanded {
   left: 0;
   top: 0;
   width: 100%;
-  height: auto;
+  height: 500px;
   border: 2px solid #E0E0E4;
   background: #ffffff;
-  border-radius: 5px;
+  border-radius: 3px;
   position: absolute;
-  padding: 200px;
   box-shadow: 0px 0px 10px 3px #E0E0E4;
+}
+.order .order-expanded .expand-left {
+  border-right: 2px solid #E0E0E4;
+}
+.order .order-expanded .expand-left .top {
+  position: relative;
+}
+.order .order-expanded .expand-left .top .full-name p {
+  font-size: 1.5em;
+  color: #187EF6;
+  margin-bottom: 5px;
+}
+.order .order-expanded .expand-left .top .view-log {
+  position: absolute;
+  right: 0;
+}
+.order .order-expanded .expand-left .top .view-log p {
+  font-size: 0.8em;
+  color: #187EF6;
+}
+.order .order-expanded .expand-left .top .charge {
+  position: absolute;
+  right: 0;
+}
+.order .order-expanded .expand-left .top .charge .charge-now {
+  padding: 10px 15px 10px 15px;
+  background: none;
+  border: 2px solid #53545A;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 0.8em;
+  color: #53545A;
+  font-family: "Roboto";
 }
 
 /*# sourceMappingURL=main.css.map */

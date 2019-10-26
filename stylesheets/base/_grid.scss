@@ -87,7 +87,44 @@
           grid-column: c8 / c9;
         }
         .order-expanded {
-          
+          display: grid;
+          grid-template-columns: [c1] 60% [c2] 40% [c3];
+          grid-template-rows: [r1] 20px [r2] auto [r3] 20px [r4];
+          .expand-left {
+            grid-column: c1 / c2;
+            grid-row: r2 / r3;
+            display: grid;
+            grid-template-columns: [c1] 3% [c2] 94% [c3] 3% [c4];
+            grid-template-rows: [r1] 40px [r2] auto [r3];
+            .top {
+              grid-column: c2 / c3;
+              display: grid;
+              grid-template-columns: [c1] 18% [c2] 15% [c3] auto [c4] 10% [c5] 15% [c6];
+              .full-name {
+                grid-column: c1 / c2;
+              }
+              .number {
+                grid-column: c2 / c3;
+              }
+              .address {
+                grid-column: c3 / c4;
+              }
+              .view-log {
+                grid-column: c4 / c5;
+              }
+              .charge {
+                grid-column: c5 / c6;
+              }
+            }
+            .bottom {
+              
+            }
+          }
+          .expand-right {
+            grid-column: c2 / c3;
+            display: grid;
+
+          }
         }
       }
     }
