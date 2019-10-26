@@ -98,8 +98,9 @@
             grid-template-rows: [r1] 40px [r2] auto [r3];
             .top {
               grid-column: c2 / c3;
+              grid-row: r1 / r2;
               display: grid;
-              grid-template-columns: [c1] 18% [c2] 15% [c3] auto [c4] 10% [c5] 15% [c6];
+              grid-template-columns: [c1] 18% [c2] 15% [c3] auto [c4] 10% [c5] 16% [c6];
               .full-name {
                 grid-column: c1 / c2;
               }
@@ -117,7 +118,8 @@
               }
             }
             .bottom {
-              
+              grid-column: c2 / c3;
+              grid-row: r2 / r3;
             }
           }
           .expand-right {

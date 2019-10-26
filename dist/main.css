@@ -601,8 +601,9 @@ h1 {
 }
 .container .left .orders .order .order-expanded .expand-left .top {
   grid-column: c2/c3;
+  grid-row: r1/r2;
   display: grid;
-  grid-template-columns: [c1] 18% [c2] 15% [c3] auto [c4] 10% [c5] 15% [c6];
+  grid-template-columns: [c1] 18% [c2] 15% [c3] auto [c4] 10% [c5] 16% [c6];
 }
 .container .left .orders .order .order-expanded .expand-left .top .full-name {
   grid-column: c1/c2;
@@ -618,6 +619,10 @@ h1 {
 }
 .container .left .orders .order .order-expanded .expand-left .top .charge {
   grid-column: c5/c6;
+}
+.container .left .orders .order .order-expanded .expand-left .bottom {
+  grid-column: c2/c3;
+  grid-row: r2/r3;
 }
 .container .left .orders .order .order-expanded .expand-right {
   grid-column: c2/c3;
