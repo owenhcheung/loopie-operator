@@ -9,6 +9,7 @@
     height: 80px;
     border-bottom: 2px solid $light-grey;
     position: relative;
+    white-space: nowrap;
     .name {
         p {
             color: $blue;
@@ -49,6 +50,7 @@
             border-right: 2px solid $light-grey;
             .top {
                 position: relative;
+                white-space: nowrap;
                 .full-name {
                     p {
                         font-size: 1.5em;
