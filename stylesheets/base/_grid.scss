@@ -88,7 +88,7 @@
         }
         .order-expanded {
           display: grid;
-          grid-template-columns: [c1] 60% [c2] 40% [c3];
+          grid-template-columns: [c1] 65% [c2] 35% [c3];
           grid-template-rows: [r1] 20px [r2] auto [r3] 20px [r4];
           .expand-left {
             grid-column: c1 / c2;
@@ -120,6 +120,17 @@
             .bottom {
               grid-column: c2 / c3;
               grid-row: r2 / r3;
+              display: grid;
+              grid-template-columns: [c1] 40% [c2] 35% [c3] 25% [c4];
+              .bottom-left {
+                grid-column: c1 / c2;
+              }
+              .bottom-center {
+                grid-column: c2 / c3;
+              }
+              .bottom-right {
+                grid-column: c3 / c4;
+              }
             }
           }
           .expand-right {

@@ -492,10 +492,6 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-size: 1.5em;
-}
-
 .container {
   display: grid;
   grid-template-columns: [c1] auto [c2] 300px [c3];
@@ -589,7 +585,7 @@ h1 {
 }
 .container .left .orders .order .order-expanded {
   display: grid;
-  grid-template-columns: [c1] 60% [c2] 40% [c3];
+  grid-template-columns: [c1] 65% [c2] 35% [c3];
   grid-template-rows: [r1] 20px [r2] auto [r3] 20px [r4];
 }
 .container .left .orders .order .order-expanded .expand-left {
@@ -623,6 +619,17 @@ h1 {
 .container .left .orders .order .order-expanded .expand-left .bottom {
   grid-column: c2/c3;
   grid-row: r2/r3;
+  display: grid;
+  grid-template-columns: [c1] 40% [c2] 35% [c3] 25% [c4];
+}
+.container .left .orders .order .order-expanded .expand-left .bottom .bottom-left {
+  grid-column: c1/c2;
+}
+.container .left .orders .order .order-expanded .expand-left .bottom .bottom-center {
+  grid-column: c2/c3;
+}
+.container .left .orders .order .order-expanded .expand-left .bottom .bottom-right {
+  grid-column: c3/c4;
 }
 .container .left .orders .order .order-expanded .expand-right {
   grid-column: c2/c3;
@@ -768,6 +775,44 @@ h1 {
   font-size: 0.8em;
   color: #53545A;
   font-family: "Roboto";
+}
+.order .order-expanded .expand-left .bottom .pickup p {
+  display: inline-block;
+}
+.order .order-expanded .expand-left .bottom .pickup .edit-pickup-date {
+  width: 35%;
+  height: 50px;
+  padding: 0 20px 0 20px;
+  border: 1px solid #E0E0E4;
+  border-radius: 3px;
+  margin-bottom: 14px;
+}
+.order .order-expanded .expand-left .bottom .pickup .edit-pickup-time {
+  width: 35%;
+  height: 50px;
+  padding: 0 20px 0 20px;
+  border: 1px solid #E0E0E4;
+  border-radius: 3px;
+  margin-bottom: 14px;
+}
+.order .order-expanded .expand-left .bottom .delivery p {
+  display: inline-block;
+}
+.order .order-expanded .expand-left .bottom .delivery .edit-delivery-date {
+  width: 35%;
+  height: 50px;
+  padding: 0 20px 0 20px;
+  border: 1px solid #E0E0E4;
+  border-radius: 3px;
+  margin-bottom: 14px;
+}
+.order .order-expanded .expand-left .bottom .delivery .edit-delivery-time {
+  width: 35%;
+  height: 50px;
+  padding: 0 20px 0 20px;
+  border: 1px solid #E0E0E4;
+  border-radius: 3px;
+  margin-bottom: 14px;
 }
 
 /*# sourceMappingURL=main.css.map */
