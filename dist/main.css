@@ -479,173 +479,205 @@ p {
   -webkit-margin-after: 0em;
 }
 
-.vcenter {
-  display: flex;
-  align-items: center;
-}
-
-.hcenter {
-  margin: 0 auto;
-}
-
 a {
   text-decoration: none;
 }
 
-.container {
+.feather-icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2.5px;
+}
+
+.grid-container {
   display: grid;
   grid-template-columns: [c1] auto [c2] 300px [c3];
   grid-template-rows: [r1] 100% [r2];
   height: 100vh;
 }
-.container .left {
+.grid-container .section-1 {
   grid-column: c1/c2;
+  grid-row: r1/r2;
   display: grid;
   grid-template-columns: [c1] 30px [c2] auto [c3] 30px [c4];
   grid-template-rows: [r1] 60px [r2] 60px [r3] auto [r4];
 }
-.container .left .nav {
+.grid-container .section-1 .nav-container {
   grid-column: c2/c3;
   grid-row: r1/r2;
-  display: grid;
-  grid-template-columns: [c1] 6% [c2] 8% [c3] 7% [c4] 8% [c5] auto [c6] 10% [c7];
 }
-.container .left .nav .nav1 {
-  grid-column: c1/c2;
-}
-.container .left .nav .nav2 {
-  grid-column: c2/c3;
-}
-.container .left .nav .nav3 {
-  grid-column: c3/c4;
-}
-.container .left .nav .nav4 {
-  grid-column: c4/c5;
-}
-.container .left .nav .nav5 {
-  grid-column: c6/c7;
-}
-.container .left .showing {
+.grid-container .section-1 .show-container {
   grid-column: c2/c3;
   grid-row: r2/r3;
 }
-.container .left .orders {
+.grid-container .section-1 .orders {
   grid-column: c2/c3;
   grid-row: r3/r4;
 }
-.container .left .orders .labels {
+.grid-container .section-1 .orders .labels {
   display: grid;
   grid-template-columns: [c1] 2% [c2] 12% [c3] 15% [c4] 15% [c5] 14% [c6] 12% [c7] 14% [c8] 11% [c9] auto [c10] 2% [c11];
 }
-.container .left .orders .labels .label1 {
+.grid-container .section-1 .orders .labels .label1 {
   grid-column: c2/c3;
 }
-.container .left .orders .labels .label2 {
+.grid-container .section-1 .orders .labels .label2 {
   grid-column: c3/c4;
 }
-.container .left .orders .labels .label3 {
+.grid-container .section-1 .orders .labels .label3 {
   grid-column: c4/c5;
 }
-.container .left .orders .labels .label4 {
+.grid-container .section-1 .orders .labels .label4 {
   grid-column: c5/c6;
 }
-.container .left .orders .labels .label5 {
+.grid-container .section-1 .orders .labels .label5 {
   grid-column: c6/c7;
 }
-.container .left .orders .labels .label6 {
+.grid-container .section-1 .orders .labels .label6 {
   grid-column: c7/c8;
 }
-.container .left .orders .labels .label7 {
+.grid-container .section-1 .orders .labels .label7 {
   grid-column: c8/c9;
 }
-.container .left .orders .order {
+.grid-container .section-1 .orders .order {
   display: grid;
   grid-template-columns: [c1] 2% [c2] 12% [c3] 15% [c4] 15% [c5] 14% [c6] 12% [c7] 14% [c8] 11% [c9] auto [c10] 2% [c11];
 }
-.container .left .orders .order .name {
+.grid-container .section-1 .orders .order .name {
   grid-column: c2/c3;
 }
-.container .left .orders .order .pickup {
+.grid-container .section-1 .orders .order .pickup {
   grid-column: c3/c4;
 }
-.container .left .orders .order .delivery {
+.grid-container .section-1 .orders .order .delivery {
   grid-column: c4/c5;
 }
-.container .left .orders .order .washer {
+.grid-container .section-1 .orders .order .washer {
   grid-column: c5/c6;
 }
-.container .left .orders .order .driver {
+.grid-container .section-1 .orders .order .driver {
   grid-column: c6/c7;
 }
-.container .left .orders .order .status {
+.grid-container .section-1 .orders .order .status {
   grid-column: c7/c8;
 }
-.container .left .orders .order .total {
+.grid-container .section-1 .orders .order .total {
   grid-column: c8/c9;
 }
-.container .left .orders .order .order-expanded {
+.grid-container .section-1 .orders .order .order-expanded {
   display: grid;
   grid-template-columns: [c1] 65% [c2] 35% [c3];
   grid-template-rows: [r1] 20px [r2] auto [r3] 20px [r4];
 }
-.container .left .orders .order .order-expanded .expand-left {
+.grid-container .section-1 .orders .order .order-expanded .expand-left {
   grid-column: c1/c2;
   grid-row: r2/r3;
   display: grid;
   grid-template-columns: [c1] 3% [c2] 94% [c3] 3% [c4];
   grid-template-rows: [r1] 40px [r2] auto [r3];
 }
-.container .left .orders .order .order-expanded .expand-left .top {
+.grid-container .section-1 .orders .order .order-expanded .expand-left .top {
   grid-column: c2/c3;
   grid-row: r1/r2;
   display: grid;
   grid-template-columns: [c1] 18% [c2] 15% [c3] auto [c4] 10% [c5] 16% [c6];
 }
-.container .left .orders .order .order-expanded .expand-left .top .full-name {
+.grid-container .section-1 .orders .order .order-expanded .expand-left .top .full-name {
   grid-column: c1/c2;
 }
-.container .left .orders .order .order-expanded .expand-left .top .number {
+.grid-container .section-1 .orders .order .order-expanded .expand-left .top .number {
   grid-column: c2/c3;
 }
-.container .left .orders .order .order-expanded .expand-left .top .address {
+.grid-container .section-1 .orders .order .order-expanded .expand-left .top .address {
   grid-column: c3/c4;
 }
-.container .left .orders .order .order-expanded .expand-left .top .view-log {
+.grid-container .section-1 .orders .order .order-expanded .expand-left .top .view-log {
   grid-column: c4/c5;
 }
-.container .left .orders .order .order-expanded .expand-left .top .charge {
+.grid-container .section-1 .orders .order .order-expanded .expand-left .top .charge {
   grid-column: c5/c6;
 }
-.container .left .orders .order .order-expanded .expand-left .bottom {
+.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom {
   grid-column: c2/c3;
   grid-row: r2/r3;
   display: grid;
-  grid-template-columns: [c1] 40% [c2] 35% [c3] 25% [c4];
+  grid-template-columns: [c1] 35% [c2] 35% [c3] 30% [c4];
 }
-.container .left .orders .order .order-expanded .expand-left .bottom .bottom-left {
+.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left {
   grid-column: c1/c2;
+  display: grid;
+  grid-template-columns: [c1] 20% [c2] 40% [c3] 40% [c4];
+  grid-template-rows: [r1] 60px [r2] 60px [r3] 60px [r4] 60px [r5] 60px [r6];
 }
-.container .left .orders .order .order-expanded .expand-left .bottom .bottom-center {
+.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .label-pickup {
+  grid-column: c1/c2;
+  grid-row: r1/r2;
+}
+.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .date-pickup {
+  grid-column: c2/c3;
+  grid-row: r1/r2;
+}
+.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .time-pickup {
+  grid-column: c3/c4;
+  grid-row: r1/r2;
+}
+.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .label-delivery {
+  grid-column: c1/c2;
+  grid-row: r2/r3;
+}
+.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .date-delivery {
+  grid-column: c2/c3;
+  grid-row: r2/r3;
+}
+.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .time-delivery {
+  grid-column: c3/c4;
+  grid-row: r2/r3;
+}
+.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .label-washer {
+  grid-column: c1/c2;
+  grid-row: r3/r4;
+}
+.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .name-washer {
+  grid-column: c2/c4;
+  grid-row: r3/r4;
+}
+.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .label-driver {
+  grid-column: c1/c2;
+  grid-row: r4/r5;
+}
+.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .name-driver {
+  grid-column: c2/c4;
+  grid-row: r4/r5;
+}
+.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .label-status {
+  grid-column: c1/c2;
+  grid-row: r5/r6;
+}
+.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .type-status {
+  grid-column: c2/c3;
+  grid-row: r5/r6;
+}
+.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-center {
   grid-column: c2/c3;
 }
-.container .left .orders .order .order-expanded .expand-left .bottom .bottom-right {
+.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-right {
   grid-column: c3/c4;
 }
-.container .left .orders .order .order-expanded .expand-right {
+.grid-container .section-1 .orders .order .order-expanded .expand-right {
   grid-column: c2/c3;
   display: grid;
 }
-.container .right {
+.grid-container .right {
   grid-column: c2/c3;
   display: grid;
   grid-template-columns: [c1] 30px [c2] auto [c3] 30px [c4];
   grid-template-rows: [r1] 60px [r2] auto [r3];
 }
-.container .right .f-label {
+.grid-container .right .f-label {
   grid-column: c2/c3;
   grid-row: r1/r2;
 }
-.container .right .inputs {
+.grid-container .right .inputs {
   grid-column: c2/c3;
   grid-row: r2/r3;
 }
@@ -653,34 +685,61 @@ a {
 /**
  * Basic typography style for copy text
  */
-.nav {
+.nav-container {
+  white-space: nowrap;
   border-bottom: 2px solid #E0E0E4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.n {
-  position: relative;
+.links {
+  display: flex;
+  justify-content: flex-start;
 }
-.n a {
-  position: absolute;
+
+.user {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav {
   height: 100%;
 }
-.n .align-left {
-  left: 0;
+.nav .feather-icon {
+  margin-right: 6px;
 }
-.n .align-right {
-  right: 0;
-}
-.n .selected {
-  border-bottom: 2px solid #187EF6;
-}
-.n .selected p {
+.nav .selected p {
   color: #187EF6;
 }
 
-.user p {
+.item-1 {
+  margin-right: 30px;
+}
+
+.item-2 {
+  margin-right: 30px;
+}
+
+.item-3 {
+  margin-right: 30px;
+}
+
+.item-4 {
+  margin-right: 30px;
+}
+
+.item-5 {
+  justify-content: flex-end;
+}
+.item-5 p {
   color: #187EF6;
 }
 
+.f-label {
+  display: flex;
+  align-items: center;
+}
 .f-label p {
   color: #161616;
 }
@@ -704,6 +763,8 @@ a {
   height: 60px;
   border-radius: 3px;
   background: #E0E0E4;
+  display: flex;
+  align-items: center;
 }
 
 .order {
@@ -712,6 +773,8 @@ a {
   border-bottom: 2px solid #E0E0E4;
   position: relative;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
 }
 .order .name p {
   color: #187EF6;
@@ -735,7 +798,7 @@ a {
   left: 0;
   top: 0;
   width: 100%;
-  height: 500px;
+  height: auto;
   border: 2px solid #E0E0E4;
   background: #ffffff;
   border-radius: 3px;
@@ -776,43 +839,28 @@ a {
   color: #53545A;
   font-family: "Roboto";
 }
-.order .order-expanded .expand-left .bottom .pickup p {
-  display: inline-block;
+.order .order-expanded .expand-left .bottom {
+  position: relative;
+  white-space: nowrap;
 }
-.order .order-expanded .expand-left .bottom .pickup .edit-pickup-date {
-  width: 35%;
+.order .order-expanded .expand-left .bottom .edit-info {
+  width: 95%;
   height: 50px;
   padding: 0 20px 0 20px;
   border: 1px solid #E0E0E4;
   border-radius: 3px;
-  margin-bottom: 14px;
 }
-.order .order-expanded .expand-left .bottom .pickup .edit-pickup-time {
-  width: 35%;
+.order .order-expanded .expand-left .bottom .edit-info-name {
+  width: 100%;
   height: 50px;
   padding: 0 20px 0 20px;
   border: 1px solid #E0E0E4;
   border-radius: 3px;
-  margin-bottom: 14px;
 }
-.order .order-expanded .expand-left .bottom .delivery p {
-  display: inline-block;
-}
-.order .order-expanded .expand-left .bottom .delivery .edit-delivery-date {
-  width: 35%;
-  height: 50px;
-  padding: 0 20px 0 20px;
-  border: 1px solid #E0E0E4;
-  border-radius: 3px;
-  margin-bottom: 14px;
-}
-.order .order-expanded .expand-left .bottom .delivery .edit-delivery-time {
-  width: 35%;
-  height: 50px;
-  padding: 0 20px 0 20px;
-  border: 1px solid #E0E0E4;
-  border-radius: 3px;
-  margin-bottom: 14px;
+
+.show-container {
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */

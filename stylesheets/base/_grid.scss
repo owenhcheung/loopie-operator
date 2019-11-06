@@ -1,36 +1,19 @@
-.container {
+.grid-container {
   display: grid;
   grid-template-columns: [c1] auto [c2] 300px [c3];
   grid-template-rows: [r1] 100% [r2];
   height: 100vh;
-  .left {
+  .section-1 {
     grid-column: c1 / c2;
-    //grid-row: r1 / r2;
+    grid-row: r1 / r2;
     display: grid;
     grid-template-columns: [c1] 30px [c2] auto [c3] 30px [c4];
     grid-template-rows: [r1] 60px [r2] 60px [r3] auto [r4];
-    .nav {
+    .nav-container {
       grid-column: c2 / c3;
       grid-row: r1 / r2;      
-      display: grid;
-      grid-template-columns: [c1] 6% [c2] 8% [c3] 7% [c4] 8% [c5] auto [c6] 10% [c7];
-      .nav1 {
-        grid-column: c1 / c2;
-      }
-      .nav2 {
-        grid-column: c2 / c3;
-      }
-      .nav3 {
-        grid-column: c3 / c4;
-      }
-      .nav4 {
-        grid-column: c4 / c5;
-      }
-      .nav5 {
-        grid-column: c6 / c7;
-      }
     }
-    .showing {
+    .show-container {
       grid-column: c2 / c3;
       grid-row: r2 / r3;
     }
@@ -121,9 +104,60 @@
               grid-column: c2 / c3;
               grid-row: r2 / r3;
               display: grid;
-              grid-template-columns: [c1] 40% [c2] 35% [c3] 25% [c4];
+              grid-template-columns: [c1] 35% [c2] 35% [c3] 30% [c4];
               .bottom-left {
                 grid-column: c1 / c2;
+                display: grid;
+                grid-template-columns: [c1] 20% [c2] 40% [c3] 40% [c4];
+                grid-template-rows: [r1] 60px [r2] 60px [r3] 60px [r4] 60px [r5] 60px [r6];
+                .label-pickup {
+                  grid-column: c1 / c2;
+                  grid-row: r1 / r2;
+                }
+                .date-pickup {
+                  grid-column: c2 / c3;
+                  grid-row: r1 / r2;
+                }
+                .time-pickup {
+                  grid-column: c3 / c4;
+                  grid-row: r1 / r2;
+                }
+                .label-delivery {
+                  grid-column: c1 / c2;
+                  grid-row: r2 / r3;
+                }
+                .date-delivery {
+                  grid-column: c2 / c3;
+                  grid-row: r2 / r3;
+                }
+                .time-delivery {
+                  grid-column: c3 / c4;
+                  grid-row: r2 / r3;
+                }
+                .label-washer {
+                  grid-column: c1 / c2;
+                  grid-row: r3 / r4;
+                }
+                .name-washer {
+                  grid-column: c2 / c4;
+                  grid-row: r3 / r4;
+                }
+                .label-driver {
+                  grid-column: c1 / c2;
+                  grid-row: r4 / r5;
+                }
+                .name-driver {
+                  grid-column: c2 / c4;
+                  grid-row: r4 / r5;
+                }
+                .label-status {
+                  grid-column: c1 / c2;
+                  grid-row: r5 / r6;
+                }
+                .type-status {
+                  grid-column: c2 / c3;
+                  grid-row: r5 / r6;
+                }
               }
               .bottom-center {
                 grid-column: c2 / c3;

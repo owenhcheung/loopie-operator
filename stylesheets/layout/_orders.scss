@@ -3,6 +3,8 @@
     height: 60px;
     border-radius: 3px;
     background: $light-grey;
+    display: flex;
+    align-items: center;
 }
 .order {
     width: 100%;
@@ -10,6 +12,8 @@
     border-bottom: 2px solid $light-grey;
     position: relative;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
     .name {
         p {
             color: $blue;
@@ -40,7 +44,7 @@
         left: 0;
         top: 0;
         width: 100%;
-        height: 500px;
+        height: auto;
         border: 2px solid $light-grey;
         background: $white;
         border-radius: 3px;
@@ -82,47 +86,21 @@
                 }
             }
             .bottom {
-                .pickup {
-                    p {
-                        display: inline-block;
-                    }
-                    .edit-pickup-date {
-                        width: 35%;
-                        height: 50px;
-                        padding: 0 20px 0 20px;
-                        border: 1px solid $light-grey;
-                        border-radius: 3px;
-                        margin-bottom: 14px;
-                    }
-                    .edit-pickup-time {
-                        width: 35%;
-                        height: 50px;
-                        padding: 0 20px 0 20px;
-                        border: 1px solid $light-grey;
-                        border-radius: 3px;
-                        margin-bottom: 14px;
-                    }
+                position: relative; 
+                white-space: nowrap;
+                .edit-info {
+                    width: 95%;
+                    height: 50px;
+                    padding: 0 20px 0 20px;
+                    border: 1px solid $light-grey;
+                    border-radius: 3px;
                 }
-                .delivery {
-                    p {
-                        display: inline-block;
-                    }
-                    .edit-delivery-date {
-                        width: 35%;
-                        height: 50px;
-                        padding: 0 20px 0 20px;
-                        border: 1px solid $light-grey;
-                        border-radius: 3px;
-                        margin-bottom: 14px;
-                    }
-                    .edit-delivery-time {
-                        width: 35%;
-                        height: 50px;
-                        padding: 0 20px 0 20px;
-                        border: 1px solid $light-grey;
-                        border-radius: 3px;
-                        margin-bottom: 14px;
-                    }
+                .edit-info-name {
+                    width: 100%;
+                    height: 50px;
+                    padding: 0 20px 0 20px;
+                    border: 1px solid $light-grey;
+                    border-radius: 3px;
                 }
             }
         }

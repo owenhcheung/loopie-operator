@@ -30,13 +30,12 @@ p {
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
 }
-.vcenter {
-  display: flex;
-  align-items: center;
-}
-.hcenter {
-  margin: 0 auto;
-}
 a {
   text-decoration: none;
+}
+.feather-icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2.5px;
+  
 }

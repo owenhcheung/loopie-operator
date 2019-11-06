@@ -5,22 +5,30 @@
   <title>Operator Dashboard</title>
   <meta name="description" content="haha fuck you">
   <link rel="stylesheet" href="dist/main.css">
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-<div class="container">
-  <div class="left">
-    <div class="nav">
-      <div class="nav1 n"><a class="align-left vcenter selected" href="#"><p>Orders</p></a></div>
-      <div class="nav2 n"><a class="align-left vcenter" href="#"><p>Customers</p></a></div>
-      <div class="nav3 n"><a class="align-left vcenter" href="#"><p>Statistics</p></a></div>
-      <div class="nav4 n"><a class="align-left vcenter" href="#"><p>Campaigns</p></a></div>
-      <div class="nav5 n user"><a class="align-right vcenter" href="#"><p>Username</p></a></div>
+<div class="grid-container">
+  <div class="section-1">
+
+    <div class="nav-container">
+      <div class="links">
+        <div class="nav item-1"><a class="selected" href="#"><p><i class="feather-icon" data-feather="briefcase"></i>Orders</p></a></div>
+        <div class="nav item-2"><a href="#"><p><i class="feather-icon" data-feather="users"></i>Customers</p></a></div>
+        <div class="nav item-3"><a href="#"><p><i class="feather-icon" data-feather="bar-chart-2"></i>Statistics</p></a></div>
+        <div class="nav item-4"><a href="#"><p><i class="feather-icon" data-feather="gift"></i>Campaigns</p></a></div>
+      </div>
+      <div class="user">
+        <div class="nav item-5"><a href="#"><p><i class="feather-icon" data-feather="user"></i>Username</p></a></div>
+      </div>
     </div>
-    <div class="showing vcenter">
+
+    <div class="show-container">
       <p>Showing <span class="f-orders">150</span> out of <span class="t-orders">400</span> orders.</p>
     </div>
+
     <div class="orders">
-      <div class="labels vcenter">
+      <div class="labels">
         <div class="label1"><p>Name</p></div>
         <div class="label2"><p>Pickup</p></div>
         <div class="label3"><p>Delivery</p></div>
@@ -30,7 +38,7 @@
         <div class="label7"><p>Total</p></div>
       </div>
       <a href="#">
-        <div class="order vcenter">
+        <div class="order">
           <div class="name"><p>Chad S.</p></div>
           <div class="pickup"><p>9/11/19 7-9PM</p></div>
           <div class="delivery"><p>9/11/19 7-9PM</p></div>
@@ -43,7 +51,7 @@
       <div class="order">
         <div class="order-expanded">
           <div class="expand-left">
-            <div class="top vcenter">
+            <div class="top">
               <div class="full-name"><p>Chad Smith</p></div>
               <div class="number"><p>123-456-7890</p></div>
               <div class="address"><p>5327 Highland Drive, Seattle, WA</p></div>
@@ -52,15 +60,41 @@
             </div>
             <div class="bottom">
               <div class="bottom-left">
-                <div class="pickup">
+                <div class="label-pickup">
                   <p>Pickup</p>
-                  <input class="edit-pickup-date" type="text" placeholder="Date">
-                  <input class="edit-pickup-time" type="text" placeholder="Time">
                 </div>
-                <div class="delivery">
-                    <p>Delivery</p>
-                    <input class="edit-delivery-date" type="text" placeholder="Date">
-                    <input class="edit-delivery-time" type="text" placeholder="Time">
+                <div class="date-pickup">
+                  <input class="edit-info" type="text" placeholder="Date">
+                </div>
+                <div class="time-pickup">
+                  <input class="edit-info align-right" type="text" placeholder="Time">
+                </div>
+                <div class="label-delivery">
+                  <p>Delivery</p>
+                </div>
+                <div class="date-delivery">
+                    <input class="edit-info" type="text" placeholder="Date">
+                </div>
+                <div class="time-delivery">
+                  <input class="edit-info align-right" type="text" placeholder="Time">
+                </div>
+                <div class="label-washer">
+                  <p>Washer</p>
+                </div>
+                <div class="name-washer">
+                  <input class="edit-info-name" type="text" placeholder="Name">
+                </div>
+                <div class="label-driver">
+                  <p>Driver</p>
+                </div>
+                <div class="name-driver">
+                  <input class="edit-info-name" type="text" placeholder="Name">
+                </div>
+                <div class="label-status">
+                  <p>Status</p>
+                </div>
+                <div class="type-status">
+                  <input class="edit-info" type="text" placeholder="Status">
                 </div>
               </div>
               <div class="bottom-center">
@@ -79,7 +113,7 @@
     </div>
   </div>
   <div class="right">
-    <div class="f-label vcenter">
+    <div class="f-label">
       <p>Filter Orders</p>
     </div>
     <div class="inputs">
@@ -94,5 +128,8 @@
     </div>
   </div>
 </div>
+<script>
+  feather.replace()
+</script>
 </body>
 </html>
