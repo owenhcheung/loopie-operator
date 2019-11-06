@@ -50,58 +50,62 @@
       </a>
       <div class="order">
         <div class="order-expanded">
-          <div class="expand-left">
+          <div class="left">
             <div class="top">
-              <div class="full-name"><p>Chad Smith</p></div>
-              <div class="number"><p>123-456-7890</p></div>
-              <div class="address"><p>5327 Highland Drive, Seattle, WA</p></div>
-              <div class="view-log"><a href="#"><p>View Log</p></a></div>
-              <div class="charge"><button class="charge-now">Charge Now</button></div>
+              <div class="customer-info">
+                <div class="full-name"><p>Chad Smith</p></div>
+                <div class="number"><p>123-456-7890</p></div>
+                <div class="address"><p>5327 Highland Drive, Seattle, WA</p></div>
+              </div>
+                <div class="order-actions">
+                <div class="view-log"><a href="#"><p>View Log</p></a></div>
+                <div class="charge"><button class="charge-now">Charge Now</button></div>
+              </div>
             </div>
             <div class="bottom">
               <div class="bottom-left">
-                <div class="label-pickup">
-                  <p>Pickup</p>
-                </div>
-                <div class="date-pickup">
+                <div class="edit-pickup">
+                  <p class="block">Pickup</p>
                   <input class="edit-info" type="text" placeholder="Date">
-                </div>
-                <div class="time-pickup">
                   <input class="edit-info align-right" type="text" placeholder="Time">
                 </div>
-                <div class="label-delivery">
-                  <p>Delivery</p>
-                </div>
-                <div class="date-delivery">
-                    <input class="edit-info" type="text" placeholder="Date">
-                </div>
-                <div class="time-delivery">
+                <div class="edit-delivery">
+                  <p class="block">Delivery</p>
+                  <input class="edit-info" type="text" placeholder="Date">
                   <input class="edit-info align-right" type="text" placeholder="Time">
                 </div>
-                <div class="label-washer">
-                  <p>Washer</p>
-                </div>
-                <div class="name-washer">
+                <div class="edit-washer">
+                  <p class="block">Washer</p>
                   <input class="edit-info-name" type="text" placeholder="Name">
                 </div>
-                <div class="label-driver">
-                  <p>Driver</p>
-                </div>
-                <div class="name-driver">
+                <div class="edit-driver">
+                  <p class="block">Driver</p>
                   <input class="edit-info-name" type="text" placeholder="Name">
                 </div>
-                <div class="label-status">
-                  <p>Status</p>
-                </div>
-                <div class="type-status">
+                <div class="edit-status">
+                  <p class="block">Status</p>
                   <input class="edit-info" type="text" placeholder="Status">
                 </div>
               </div>
               <div class="bottom-center">
-
+                <div class="washer-notes">
+                  <div class="topbar">
+                    <p>Washer Notes</p>
+                    <a href="#"><p>Edit</p></a>
+                  </div>
+                  <input class="text-box" type="text">
+                </div>
+                <div class="driver-notes">
+                  <p>Driver Notes</p>
+                  <input class="text-box" type="text">
+                </div>
+                <div class="internal-notes">
+                  <p>Internal Notes</p>
+                  <input class="text-box" type="text">
+                </div>
               </div>
               <div class="bottom-right">
-
+                <input type="radio" name="gender" value="female"> Female<br>
               </div>
             </div>
           </div>

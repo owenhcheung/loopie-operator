@@ -569,98 +569,30 @@ a {
   grid-template-columns: [c1] 65% [c2] 35% [c3];
   grid-template-rows: [r1] 20px [r2] auto [r3] 20px [r4];
 }
-.grid-container .section-1 .orders .order .order-expanded .expand-left {
+.grid-container .section-1 .orders .order .order-expanded .left {
   grid-column: c1/c2;
   grid-row: r2/r3;
   display: grid;
   grid-template-columns: [c1] 3% [c2] 94% [c3] 3% [c4];
   grid-template-rows: [r1] 40px [r2] auto [r3];
 }
-.grid-container .section-1 .orders .order .order-expanded .expand-left .top {
+.grid-container .section-1 .orders .order .order-expanded .left .top {
   grid-column: c2/c3;
   grid-row: r1/r2;
-  display: grid;
-  grid-template-columns: [c1] 18% [c2] 15% [c3] auto [c4] 10% [c5] 16% [c6];
 }
-.grid-container .section-1 .orders .order .order-expanded .expand-left .top .full-name {
-  grid-column: c1/c2;
-}
-.grid-container .section-1 .orders .order .order-expanded .expand-left .top .number {
-  grid-column: c2/c3;
-}
-.grid-container .section-1 .orders .order .order-expanded .expand-left .top .address {
-  grid-column: c3/c4;
-}
-.grid-container .section-1 .orders .order .order-expanded .expand-left .top .view-log {
-  grid-column: c4/c5;
-}
-.grid-container .section-1 .orders .order .order-expanded .expand-left .top .charge {
-  grid-column: c5/c6;
-}
-.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom {
+.grid-container .section-1 .orders .order .order-expanded .left .bottom {
   grid-column: c2/c3;
   grid-row: r2/r3;
   display: grid;
   grid-template-columns: [c1] 35% [c2] 35% [c3] 30% [c4];
 }
-.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left {
+.grid-container .section-1 .orders .order .order-expanded .left .bottom .bottom-left {
   grid-column: c1/c2;
-  display: grid;
-  grid-template-columns: [c1] 20% [c2] 40% [c3] 40% [c4];
-  grid-template-rows: [r1] 60px [r2] 60px [r3] 60px [r4] 60px [r5] 60px [r6];
 }
-.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .label-pickup {
-  grid-column: c1/c2;
-  grid-row: r1/r2;
-}
-.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .date-pickup {
-  grid-column: c2/c3;
-  grid-row: r1/r2;
-}
-.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .time-pickup {
-  grid-column: c3/c4;
-  grid-row: r1/r2;
-}
-.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .label-delivery {
-  grid-column: c1/c2;
-  grid-row: r2/r3;
-}
-.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .date-delivery {
-  grid-column: c2/c3;
-  grid-row: r2/r3;
-}
-.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .time-delivery {
-  grid-column: c3/c4;
-  grid-row: r2/r3;
-}
-.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .label-washer {
-  grid-column: c1/c2;
-  grid-row: r3/r4;
-}
-.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .name-washer {
-  grid-column: c2/c4;
-  grid-row: r3/r4;
-}
-.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .label-driver {
-  grid-column: c1/c2;
-  grid-row: r4/r5;
-}
-.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .name-driver {
-  grid-column: c2/c4;
-  grid-row: r4/r5;
-}
-.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .label-status {
-  grid-column: c1/c2;
-  grid-row: r5/r6;
-}
-.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-left .type-status {
-  grid-column: c2/c3;
-  grid-row: r5/r6;
-}
-.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-center {
+.grid-container .section-1 .orders .order .order-expanded .left .bottom .bottom-center {
   grid-column: c2/c3;
 }
-.grid-container .section-1 .orders .order .order-expanded .expand-left .bottom .bottom-right {
+.grid-container .section-1 .orders .order .order-expanded .left .bottom .bottom-right {
   grid-column: c3/c4;
 }
 .grid-container .section-1 .orders .order .order-expanded .expand-right {
@@ -772,7 +704,6 @@ a {
   height: 80px;
   border-bottom: 2px solid #E0E0E4;
   position: relative;
-  white-space: nowrap;
   display: flex;
   align-items: center;
 }
@@ -805,31 +736,43 @@ a {
   position: absolute;
   box-shadow: 0px 0px 10px 3px #E0E0E4;
 }
-.order .order-expanded .expand-left {
+.order .order-expanded .left {
   border-right: 2px solid #E0E0E4;
 }
-.order .order-expanded .expand-left .top {
+.order .order-expanded .left .top {
   position: relative;
   white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
 }
-.order .order-expanded .expand-left .top .full-name p {
+.order .order-expanded .left .top .customer-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.order .order-expanded .left .top .customer-info .full-name p {
   font-size: 1.5em;
   color: #187EF6;
-  margin-bottom: 5px;
 }
-.order .order-expanded .expand-left .top .view-log {
-  position: absolute;
-  right: 0;
+.order .order-expanded .left .top .customer-info .number {
+  margin-left: 30px;
 }
-.order .order-expanded .expand-left .top .view-log p {
+.order .order-expanded .left .top .customer-info .address {
+  margin-left: 30px;
+}
+.order .order-expanded .left .top .order-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+.order .order-expanded .left .top .order-actions .view-log {
+  margin-right: 30px;
+}
+.order .order-expanded .left .top .order-actions .view-log p {
   font-size: 0.8em;
   color: #187EF6;
 }
-.order .order-expanded .expand-left .top .charge {
-  position: absolute;
-  right: 0;
-}
-.order .order-expanded .expand-left .top .charge .charge-now {
+.order .order-expanded .left .top .order-actions .charge .charge-now {
   padding: 10px 15px 10px 15px;
   background: none;
   border: 2px solid #53545A;
@@ -839,23 +782,65 @@ a {
   color: #53545A;
   font-family: "Roboto";
 }
-.order .order-expanded .expand-left .bottom {
-  position: relative;
+.order .order-expanded .left .bottom {
   white-space: nowrap;
 }
-.order .order-expanded .expand-left .bottom .edit-info {
-  width: 95%;
+.order .order-expanded .left .bottom .block {
+  width: 70px;
+}
+.order .order-expanded .left .bottom .edit-pickup {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+.order .order-expanded .left .bottom .edit-delivery {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+.order .order-expanded .left .bottom .edit-washer {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+.order .order-expanded .left .bottom .edit-driver {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+.order .order-expanded .left .bottom .edit-status {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+.order .order-expanded .left .bottom .edit-info {
+  width: 90px;
+  height: 50px;
+  padding: 0 20px 0 20px;
+  border: 1px solid #E0E0E4;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+.order .order-expanded .left .bottom .edit-info-name {
+  width: 160px;
   height: 50px;
   padding: 0 20px 0 20px;
   border: 1px solid #E0E0E4;
   border-radius: 3px;
 }
-.order .order-expanded .expand-left .bottom .edit-info-name {
-  width: 100%;
-  height: 50px;
+.order .order-expanded .left .bottom .text-box {
   padding: 0 20px 0 20px;
   border: 1px solid #E0E0E4;
   border-radius: 3px;
+  min-height: 50px;
+  height: auto;
+  width: 230px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.order .order-expanded .left .bottom .topbar {
+  display: flex;
+  justify-content: space-between;
 }
 
 .show-container {

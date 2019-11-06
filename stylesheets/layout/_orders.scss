@@ -11,7 +11,6 @@
     height: 80px;
     border-bottom: 2px solid $light-grey;
     position: relative;
-    white-space: nowrap;
     display: flex;
     align-items: center;
     .name {
@@ -50,57 +49,114 @@
         border-radius: 3px;
         position: absolute;
         box-shadow: 0px 0px 10px 3px $light-grey;
-        .expand-left {
+        .left {
             border-right: 2px solid $light-grey;
             .top {
                 position: relative;
                 white-space: nowrap;
-                .full-name {
-                    p {
-                        font-size: 1.5em;
-                        color: $blue;
-                        margin-bottom: 5px;
+                display: flex;
+                justify-content: space-between;
+                .customer-info {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: baseline;
+                    .full-name {
+                        p {
+                            font-size: 1.5em;
+                            color: $blue;
+                        }
+                    }
+                    .number {
+                        margin-left: 30px;
+                    }
+                    .address {
+                        margin-left: 30px;
                     }
                 }
-                .view-log {
-                    p {
-                        font-size: 0.8em;
-                        color: $blue;
+                .order-actions {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: baseline;
+                    .view-log {
+                        margin-right: 30px;
+                        p {
+                            font-size: 0.8em;
+                            color: $blue;
+                        }
                     }
-                    position: absolute;
-                    right: 0;
-                }
-                .charge {
-                    .charge-now {
-                        padding: 10px 15px 10px 15px;
-                        background: none;
-                        border: 2px solid $dark-grey;
-                        border-radius: 3px;
-                        font-weight: bold;
-                        font-size: 0.8em;
-                        color: $dark-grey;
-                        font-family: "Roboto";
+                    .charge {
+                        .charge-now {
+                            padding: 10px 15px 10px 15px;
+                            background: none;
+                            border: 2px solid $dark-grey;
+                            border-radius: 3px;
+                            font-weight: bold;
+                            font-size: 0.8em;
+                            color: $dark-grey;
+                            font-family: "Roboto";
+                        }
                     }
-                    position: absolute;
-                    right: 0;
                 }
             }
             .bottom {
-                position: relative; 
                 white-space: nowrap;
+                .block {
+                    width: 70px;
+                }
+                .edit-pickup {
+                    display: flex;
+                    align-items: baseline;
+                    margin-bottom: 10px;
+                    
+                }
+                .edit-delivery {
+                    display: flex;
+                    align-items: baseline;
+                    margin-bottom: 10px;
+                }
+                .edit-washer {
+                    display: flex;
+                    align-items: baseline;
+                    margin-bottom: 10px;
+                }
+                .edit-driver {
+                    display: flex;
+                    align-items: baseline;
+                    margin-bottom: 10px;
+                }
+                .edit-status {
+                    display: flex;
+                    align-items: baseline;
+                    margin-bottom: 10px;
+                }
                 .edit-info {
-                    width: 95%;
+                    width: 90px;
+                    height: 50px;
+                    padding: 0 20px 0 20px;
+                    border: 1px solid $light-grey;
+                    border-radius: 3px;
+                    margin-right: 10px;
+                }
+                .edit-info-name {
+                    width: 160px;
                     height: 50px;
                     padding: 0 20px 0 20px;
                     border: 1px solid $light-grey;
                     border-radius: 3px;
                 }
-                .edit-info-name {
-                    width: 100%;
-                    height: 50px;
+                .text-box {
                     padding: 0 20px 0 20px;
                     border: 1px solid $light-grey;
                     border-radius: 3px;
+                    min-height: 50px;
+                    height: auto;
+                    width: 230px;
+                    margin-top: 10px;   
+                    margin-bottom: 10px;
+                }
+                .topbar {
+                    display: flex;
+                    justify-content: space-between;
                 }
             }
         }
